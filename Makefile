@@ -6,14 +6,14 @@
 #    By: omimouni <omimouni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/24 12:18:32 by omimouni          #+#    #+#              #
-#    Updated: 2022/07/24 12:33:30 by omimouni         ###   ########.fr        #
+#    Updated: 2022/07/24 13:09:16 by omimouni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 all:
-	clang++ *.cpp -g -std=c++98 -o ./test
+	clang++ src/*.cpp -g -std=c++98 -I./includes -o ./test.out
 
 fclean:
-	rm -rf ./test
+	rm -rf ./test.out
 
 re: fclean all
